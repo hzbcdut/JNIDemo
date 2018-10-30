@@ -7,5 +7,9 @@ package com.example.huzhengbiao.jnidemo;
  */
 public class MyJniUtils {
 
+    static {
+        System.loadLibrary("main");
+    }
+
     public native String getName();
 }
